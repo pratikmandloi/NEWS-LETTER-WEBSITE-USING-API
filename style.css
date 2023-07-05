@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #4600ff;
+    --secondary-text-color: #7341ff;
+    --hero-color: #0060ff;
+    --hero-color-dark: #001bff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fcfd;
+    /* width: 100%; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #ddeeff;
+    box-shadow: 0 0 3px rgb(255, 233, 233);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 17px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links ul{
+    gap: 15px;
+}
+ul li a:hover{
+    color: var(--secondary-text-color);
+}
+
+ul li a:active{
+    color: red;
+}
+
+ul li a.active{
+    color: var(--hero-color);
+}
+
+.input-box{
+    width: 230px;
+    height: 100%;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--hero-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-btn{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 7px 22px;
+    background-color: var(--hero-color);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.input-btn:hover{
+    background-color: var(--hero-color-dark);
+}
+
+.cards-container{
+    margin-top: 100px;
+    padding-top: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    min-height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ddeeff;
+    box-shadow: 0 0 4px #ddeeff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    background-color: #cee5fc;
+    transform: translateY(-2px);
+    box-shadow: 1 1 9px #ddeeff;
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding-inline: 12px;
+    padding-block: 10px;
+}
+
+.news-source{
+    margin-block: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

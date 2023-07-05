@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS LETTER - USING API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- api : 8a2407cd3a97467aba56446ab9fa4c7a -->
+    <header>
+        <nav>
+            <div class="main-nav container flex">
+                <div class="logo" onclick="reload()">
+                    <h3>NEWS LETTER</h3>
+                </div>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li><a href="#" id="politics"  onclick="onNavItemClick('politics') ">Politics</a></li>
+                        <li><a href="#" id="finance" onclick="onNavItemClick('finance') ">Finance</a></li>
+                        <li><a href="#" id="tech" onclick="onNavItemClick('tech') ">Tech</a></li>
+                        <li><a href="#" id="stock" onclick="onNavItemClick('stock') ">Stock</a></li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="e.g. Bollywood" class="input-box" id="input-box">
+                    <button class="input-btn" id="input-btn">Submit</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <div class="cards-container container flex" id="cards-container">
+            
+            </div>
+
+            <template id="template-news-card">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/400x200" alt="News-Img" id="news-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 id="news-title">News Title</h3>
+                        <h6 id="news-source" class="news-source">End Gadget 25/06/2023</h6>
+                        <p id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, quia totam! Minima ipsum sit nesciunt veritatis tempora quam dolores facilis!</p>
+                    </div>
+                </div>
+    
+                </template>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
